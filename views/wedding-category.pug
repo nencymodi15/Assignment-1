@@ -1,0 +1,24 @@
+extends templet  
+
+block main-content
+  .cat-title 
+    h2.titleofCat Our Wedding Category 
+    img(src="/images/categories.jpg", alt="wedding venue" height="500px" width="1000px")
+  .main-divofCat
+    each d in MainData 
+      .div-Cat 
+        h3.cat-name #{d.category_name}
+        .div-content 
+          p.texts Venue: 
+            span  #{d.venu}
+          p.texts Location: 
+            span  #{d.locations}
+          p.texts Flowers:
+            span  #{d.Flowers}
+          p.texts Number of Guests:
+            span  #{d.noOfGuests}
+          p.texts Menu:
+            span  #{d.Menu}
+          p.texts Cake:
+            span  #{d.cake}
+          a(href="#", class="morebutton") More Details  

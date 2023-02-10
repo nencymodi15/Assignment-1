@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&family=Peralta&family=Poppins:wght@300;400&family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arapey&display=swap');
+html{
+    box-sizing: border-box;
+    font-family:"Poppins" , sans-serif;
+}
+*, *::before, *::after {
+    box-sizing:inherit;
+}
+#header{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: white;
+  opacity: 1;
+  gap: 20px;
+  box-shadow: 10px 10px 10px #C5C5C5;
+  margin-bottom: 20px;
+}
+#logo{
+  flex-basis: 25%;
+}
+.logo{
+  height: 100px;
+  width: 100px;
+}
+#main-navigation{
+  align-items: center;
+  flex-basis: 70%;
+}
+#main-navigation ul{
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+#main-navigation li{
+  margin-top: 20px;
+  align-self: center;
+  text-align: center;
+  font-family: "Poppins";
+  display: inline-block;
+  flex-basis: 23%;
+  font-family: "Poppins";
+  display: inline-block;
+  font-size: 24px;
+}
+#main-navigation li a{
+  font-size: 20px;
+  color: #A87B58;
+  text-decoration: none;
+}
+#main-navigation li:hover{
+  color: white;
+  background-color: #C5C5C5;;
+}
+.maincontent{
+  background-image: url("../images/Hero-image.jpg");
+  padding: 50px 300px 450px 300px;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+#herotext{
+  font-family: "Love Light";
+  font-size: 40px;
+  color: #A87B58;
+}
+#heroqote{
+  color: #A87B58;
+  font-family: "Arapey";
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+#button{
+  margin-top: 1000px;
+  text-decoration: none;
+  background-color: #c0c0c0;
+  color: #A87B58;
+  border-radius: 20px 20px 20px 20px;
+  padding: 20px 30px;
+  transition: all 1s ease-in;
+}
+.wedding-event{
+  width: 100%;
+  height: 600px;
+  align-items: center;
+  display: flex;
+  flex-flow: row;
+  /*background-color: #F5E7D6;*/
+}
+/*https://www.bartleby.com/essay/Wedding-Is-An-Important-Part-Of-Life-FK5ZYJDV36Y3W*/
+.wed-image{
+  justify-self: center;
+  flex-basis: 40%;
+}
+.wed-image img{
+  margin-left: 100px;
+}
+.wed-text{
+  justify-self: center;
+  flex-basis: 50%;
+  background-color: #F5E7D6;
+  padding: 120px;
+}
+.wed-text{
+  font-family: "Arapey";
+  font-weight: 500;
+}
+#button:hover{
+  transform: scale(1.5);
+}
+.contactTile{
+  font-family: "Love Light";
+  font-size: 34px;
+  text-align: center;
+  color: #A87B58;
+}
+.main-contact-us{
+  background-image: url("../images/Contact-us-pic.jpg");
+  padding: 50px 300px 450px 0px;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  font-family: "Arapey";
+  font-size: 24px;
+  color: #A87B58;
+}

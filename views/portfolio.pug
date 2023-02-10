@@ -1,0 +1,12 @@
+extends templet  
+
+block main-content 
+  h2#port-text Our Precious Privious Wedding arrangements
+  each data in PortData
+    .portfolios-content
+      h3.clientName #{data.clientName} 
+      img(src = data.path, alt="wedding pic" height="500px" width="1000px")
+      .reviws 
+        p #{data.reviews}
+        a(href="#" class="wed-Button") Wedding Details  
+      
