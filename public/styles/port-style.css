@@ -44,3 +44,21 @@
   background-color: black;
   color: white;
 }
+@media screen and (max-width: 768px) {
+  .portfolios-content{
+    padding: 0px;
+  }
+  .portfolios-content img{
+    height: 350px !important;
+    width: 500px !important;
+  }
+  .reviws{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .portfolios-content img{
+    height: 150px !important;
+      width: 250px !important;
+  }
+}

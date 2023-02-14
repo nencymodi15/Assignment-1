@@ -20,6 +20,9 @@ html{
 #logo{
   flex-basis: 25%;
 }
+.menubutton{
+  display: none;
+}
 .logo{
   height: 100px;
   width: 100px;
@@ -126,4 +129,91 @@ html{
   font-family: "Arapey";
   font-size: 24px;
   color: #A87B58;
+}
+@media screen and (max-width: 768px) {
+  #header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  #logo{
+    flex-basis: 45%;
+  }
+  #main-navigation{
+    display: none;
+    margin-top: 20px;
+  }
+  .menubutton{
+    display: block;
+  }
+  #menu{
+    margin-top: 20px;
+    display: block;
+    font-style: "Quicksand";
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #FFDAB9;
+    color: #F08080;
+    padding: 20px;
+    border-radius: 14px 14px 14px 14px;
+  }
+  .wedding-event{
+    width: 100%;
+    height: fit-content;
+    display: block;
+    flex-flow: row;
+    background-color: #F5E7D6;
+    /*background-color: #F5E7D6;*/
+  }
+  .wed-image{
+    padding: 10px;
+  }
+  .wed-image img{
+    float: left;
+    margin: 20px;
+    width: 350px !important;
+    height: 250px !important;
+  }
+  .wed-text{
+    padding: 0%;
+  }
+  .navshow{
+    margin: 0% !important;
+    display: flex !important;
+    flex-flow: column wrap !important;
+  }
+  .menuul.show{
+    display: flex !important;
+    position: fixed;
+    right: 0;
+    background-color: #FBC4AB;
+    color: #F08080;
+    width: 50%;
+  }
+  #main-navigation li{
+    flex-basis: 100% !important;
+  }
+  .maincontent{
+    padding: 200px;
+  }
+  .main-contact-us{
+    background-image: url("../images/Contact-us-pic.jpg");
+    padding: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-family: "Arapey";
+    font-size: 24px;
+    color: #A87B58;
+  }
+}
+@media screen and (max-width: 320px) {
+  .maincontent{
+    padding: 50px;
+  }
+  .wed-image img{
+    float: left;
+    margin: 20px;
+    width: 150px !important;
+    height: 150px !important;
+  }
 }

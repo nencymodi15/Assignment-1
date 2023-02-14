@@ -45,13 +45,34 @@
   font-weight: lighter;
 }
 .morebutton{
+  text-align: center;
   text-decoration: none;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
   background-color: #A87B58;
   color: white;
+  flex-basis: 100%;
 }
 .div-Cat:hover{
   transform: scale(1.05);
+}
+@media screen and (max-width: 768px) {
+  .div-content {
+    height: 600px;
+    width: 300px;
+  }
+  .texts{
+    flex-basis: 100%;
+  }
+  .cat-title img{
+    height: 350px !important;
+    width: 500px !important;
+  }
+  @media screen and (max-width: 320px) {
+    .cat-title img{
+      height: 150px !important;
+      width: 250px !important;
+    }
+  }
 }

@@ -4,16 +4,20 @@ html
   head
     meta(charset="utf-8") 
     title #{title}
+    script(src="/Script/script.js")
     link(rel="stylesheet", type="text/css" , href="/styles/style.css")
     link(rel="stylesheet", type="text/css" , href="/styles/port-style.css")
     link(rel="stylesheet", type="text/css" , href="/styles/wed-page.css")
+    meta(name="viewport" content="width=device-width")
   body
     header#header 
       div#logo 
         a(href="/")  
           img(src="/images/logo.png", alt="logo" class="logo")
+      div(class="menubutton" onclick="toggle()") 
+        a(href="#" id="menu") menu  
       nav#main-navigation 
-        ul 
+        ul.menuul
           li 
             a(href="/") Home 
           li 
